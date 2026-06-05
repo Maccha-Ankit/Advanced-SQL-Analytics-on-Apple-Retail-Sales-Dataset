@@ -51,7 +51,6 @@ Working with a large dataset helped me gain practical experience in:
 * Query Optimization
 * Indexing
 * Large-Scale Data Analysis
-* Business KPI Reporting
 * Performance Tuning using `EXPLAIN ANALYZE`
 * Writing Efficient SQL Queries
 
@@ -70,7 +69,6 @@ Working with a large dataset helped me gain practical experience in:
 * Date Functions
 * Query Optimization
 * Indexing
-* Business KPI Analysis
 
 ---
 
