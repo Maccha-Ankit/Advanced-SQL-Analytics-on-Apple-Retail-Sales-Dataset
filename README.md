@@ -2,32 +2,21 @@
 
 ## About This Project
 
-As part of my journey in learning Data Analytics and SQL, I worked on this project to analyze an Apple Retail Sales dataset using PostgreSQL.
+This project showcases the use of SQL to analyze a large-scale Apple Retail Sales dataset and solve real-world business problems related to sales performance, store operations, product reliability, and warranty claims.
 
-The objective of this project was to solve real-world business problems related to sales performance, store operations, product reliability, and warranty claims. Through this project, I explored how SQL can be used to transform raw transactional data into meaningful business insights.
+The analysis was performed using PostgreSQL on a dataset containing **over 1 million sales records**, providing hands-on experience with querying, optimizing, and extracting insights from large volumes of data.
 
-I also practiced advanced SQL concepts such as joins, aggregations, window functions, Common Table Expressions (CTEs), date functions, and query optimization techniques.
-
----
-
-## Project Objectives
-
-* Analyze sales performance across stores and countries.
-* Understand product demand and customer purchasing trends.
-* Evaluate product reliability using warranty claim data.
-* Generate actionable business insights using SQL.
-* Improve query performance through indexing and optimization.
-* Strengthen practical SQL skills using real-world business scenarios.
+Through this project, I applied advanced SQL concepts such as joins, aggregations, window functions, Common Table Expressions (CTEs), date functions, and query optimization techniques to generate meaningful business insights.
 
 ---
 
-## Database Schema
+## Dataset Overview
 
-The project uses five tables:
+The project uses a retail dataset consisting of the following tables:
 
 ### Stores
 
-Contains information about Apple retail stores.
+Contains information about retail store locations.
 
 ### Products
 
@@ -35,7 +24,7 @@ Contains product details such as product name, category, launch date, and price.
 
 ### Sales
 
-Contains transaction-level sales records including quantity sold and sale date.
+Contains transaction-level sales records including quantity sold, product purchased, store information, and sale date.
 
 ### Warranty
 
@@ -43,13 +32,32 @@ Contains warranty claim records and repair status information.
 
 ### Category
 
-Contains product category information.
+Contains product category details.
+
+---
+
+## Dataset Scale
+
+The project was performed on a large dataset containing:
+
+* **1M+ Sales Records**
+* Product Information
+* Store Information
+* Warranty Claim Data
+* Product Category Data
+
+Working with a large dataset helped me gain practical experience in:
+
+* Query Optimization
+* Indexing
+* Large-Scale Data Analysis
+* Business KPI Reporting
+* Performance Tuning using `EXPLAIN ANALYZE`
+* Writing Efficient SQL Queries
 
 ---
 
 ## SQL Concepts Used
-
-Throughout this project, I worked with:
 
 * SELECT Statements
 * Filtering and Sorting
@@ -99,7 +107,7 @@ Throughout this project, I worked with:
 
 ## Query Performance Optimization
 
-To improve query performance, indexes were created on frequently used columns:
+To improve query performance on large datasets, indexes were created on frequently used columns:
 
 ```sql
 CREATE INDEX sales_product_id ON sales(product_id);
@@ -112,26 +120,33 @@ Query execution plans were analyzed using:
 EXPLAIN ANALYZE
 ```
 
-The execution time of frequently used queries was significantly reduced after indexing.
+This significantly reduced query execution time compared to full table scans.
 
 ---
 
 ## Key Insights
 
-* Store performance varies significantly across countries.
-* Some products generate high sales but also experience high warranty claim rates.
-* Warranty analysis helps identify potential product quality issues.
-* Revenue per store provides a better measure of operational efficiency than total revenue.
-* A small number of stores contribute a disproportionately high share of total sales.
-* Data-driven analysis can help businesses improve inventory planning and customer satisfaction.
+* Store performance varies across countries and regions.
+* Revenue per store provides a better measure of efficiency than total revenue.
+* Some products generate high sales but also experience higher warranty claim rates.
+* Warranty claim analysis helps identify potential product quality issues.
+* Query optimization becomes increasingly important when working with millions of records.
+* Business decisions can be improved through data-driven analysis and KPI monitoring.
 
 ---
 
 ## What I Learned
 
-This project helped me strengthen my SQL skills by solving practical business problems using real-world datasets. I gained hands-on experience with advanced SQL concepts, query optimization, data exploration, KPI calculations, and business-focused analytics.
+This project helped me strengthen my SQL skills by solving practical business problems using real-world retail data.
 
-It also improved my ability to translate business requirements into SQL queries and extract meaningful insights from data.
+Key takeaways include:
+
+* Writing complex SQL queries for business analysis
+* Working with large datasets containing over 1 million records
+* Using joins, window functions, and CTEs effectively
+* Performing query optimization using indexes
+* Translating business questions into analytical SQL solutions
+* Extracting actionable insights from raw data
 
 ---
 
